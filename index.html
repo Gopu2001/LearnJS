@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LearnJS</title>
+    
+    <style>
+    var {
+      font-style: inherit;
+    }
+    </style>
+    
+    <script>
+      var numberClicks = 0;
+      function buttonClicked() {
+        numberClicks += 1;
+        document.getElementById('count').innerHTML = numberClicks + ' times!';
+      }
+    </script>
+    
+  </head>
+
+  <body>
+    <h1 id='hello'>Hello, World!</h1>
+    <br>
+    
+    <button type='button' onclick='buttonClicked()'>Click Me!</button>
+    <br>
+    
+    <p>You clicked the button <var id='count'>0 times!</var></p>
+  </body>
+
+</html>
